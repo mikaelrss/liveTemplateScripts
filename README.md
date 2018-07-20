@@ -56,4 +56,6 @@ to pass the relative path of the current test file to the script, another groovy
 `groovyScript("_editor.getVirtualFile().getPath()")`
 
 
+#### Demo
 
+![Alt Text](http://g.recordit.co/1jgt67Xq0S.gif)
