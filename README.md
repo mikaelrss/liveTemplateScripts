@@ -13,9 +13,10 @@ type Props = {
   iNeedSomeNumbers: number,
   startDate: string,
   arrayWithCustomObject: Array<CustomType>,
+  arrayWithNumbers: Array<number>,
   func: Function,
   function: () => void,
-  functionWithPromise: (test: string) => Promise<void>,
+  functionWithPromise: (test: string) => Promise<void>
 };
 ```
 
@@ -23,14 +24,15 @@ will return
 
 ```
 const defaultProps = {
-  componentNeeds2DArray: [[{}], [{}]],
+  componentNeeds2DArray: [[77], [81]],
   objectId: 'testString',
-  iNeedSomeNumbers: 97,
+  iNeedSomeNumbers: 43,
   startDate: 'testString',
   arrayWithCustomObject: [{}],
+  arrayWithNumbers: [74, 15],
   func: jest.fn(),
   function: jest.fn(),
-  functionWithPromise: jest.fn().mockImplementationOnce(() => Promise.resolve()),
+  functionWithPromise: jest.fn().mockImplementationOnce(() => Promise.resolve())
 };
 ```
 
