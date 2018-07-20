@@ -5,8 +5,10 @@ A collection of groovy scripts which could be useful for live templates in Intel
 
 A script for extracting flow-typed Props definition in Component file and mapping it to an object with values in the test file.
 
+![Alt Text](http://g.recordit.co/1jgt67Xq0S.gif)
+
 A component with props definition like this
-```
+```js
 type Props = {
   componentNeeds2DArray: Array<Array<number>>,
   objectId: string,
@@ -22,7 +24,7 @@ type Props = {
 
 will return 
 
-```
+```js 
 const defaultProps = {
   componentNeeds2DArray: [[77], [81]],
   objectId: 'testString',
@@ -55,7 +57,3 @@ to pass the relative path of the current test file to the script, another groovy
 
 `groovyScript("_editor.getVirtualFile().getPath()")`
 
-
-#### Demo
-
-![Alt Text](http://g.recordit.co/1jgt67Xq0S.gif)
